@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1>Add Movie Data</h1>
+    <div>
+        <input type="text" id="id" placeholder="movie id"><br><br>
+        <input type="text" id="name" placeholder="movie name"><br><br>
+        <input type="text" id="actor" placeholder="actor's name"><br><br>
+        <input type="text" id="actress" placeholder="actress's name"><br><br>
+        <input type="text" id="director" placeholder="director's name"><br><br>
+        <button type="submit" value="Upload movie data" onclick="pushData()">Add Movie</button>
+    </div>
+    <h1>Search Movie Data</h1>
+    <div>
+        <input type="text" placeholder="Enter movie id" id="getById"><br><br>
+        <button type="submit" value="Get Data" onclick="getData()">Search Movie</button>
+        <p id="output"></p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

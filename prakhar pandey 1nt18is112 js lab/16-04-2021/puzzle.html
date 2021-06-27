@@ -1,0 +1,30 @@
+<!-- Title: Castle Task -->
+<!-- Description: task 3 -->
+<!-- Author: Abhishek@1NT18IS009 -->
+<!-- Date: 16/4/21 -->
+<!DOCTYPE html>
+
+<head>
+    <title>puzzle</title>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./puzzle.css" />
+</head>
+
+<body>
+    <p>Push the buttons to move the red square:</p>
+    <div id="myfilter"
+        style="position:absolute;background-color:#000000;opacity:0.3;width:322px;height:182px;display:none"></div>
+    <div id="myrestartbutton" style="position:absolute;padding-top:75px;padding-left:120px;display:none;"><button
+            onclick="restartGame()">Restart</button></div>
+    <div id="canvascontainer"></div>
+    <br>
+    <div style="text-align:center;width:320px;">
+        <button ontouchstart="moveup()" onmousedown="moveup()" onmouseup="clearmove()">UP</button><br><br>
+        <button ontouchstart="moveleft()" onmousedown="moveleft()" onmouseup="clearmove()">LEFT</button>
+        <button ontouchstart="moveright()" onmousedown="moveright()" onmouseup="clearmove()">RIGHT</button><br><br>
+        <button ontouchstart="movedown()" onmousedown="movedown()" onmouseup="clearmove()">DOWN</button>
+    </div>
+    <script src="./puzzle.js"></script>
+</body>
+
+</html>

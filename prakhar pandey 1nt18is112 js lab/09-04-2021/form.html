@@ -1,0 +1,69 @@
+<!-- Title: Form -->
+<!-- Description: form -->
+<!-- Author: Abhishek@1NT18IS009 -->
+<!-- Date: 9/4/21 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form Task</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" />
+</head>
+
+<body>
+    <center>
+        <h2>ISE DEPARTMENT</h2>
+    </center>
+    <div>
+        <form action="" method="get">
+            <input id="fname" type="text" placeholder="Enter First name" /><br /><br />
+            <input id="lname" type="text" placeholder="Enter Last name" /><br /><br />
+            <input id="dob" type="date" placeholder="Enter DOB" /><br /><br />
+            <input id="email" type="text" placeholder="Enter email" /><br /><br />
+            <select id="country" name="country">
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="China">China</option>
+                <option value="Japan">Japan</option>
+            </select>
+            <br /><br />
+            <button id="submit">Submit</button>
+        </form>
+    </div>
+    
+    <footer>
+        <p>Contact: ASR</p>
+        <p><a href="mailto:anshuasr10@gmail.com">anshuasr10@gmail.com</a></p>
+    </footer>
+    <script>
+        var formDetails = document.getElementById("submit");
+        formDetails.addEventListener("click", () => {
+            let fname = document.getElementById("fname").value;
+            let lname = document.getElementById("lname").value;
+            let dob = document.getElementById("dob").value;
+            let email = document.getElementById("email").value;
+            let country = document.getElementById("country").value;
+            // let subject = document.getElementById("subject").value;
+            alert(
+                "Hello " +
+                fname +
+                " " +
+                lname +
+                "\n" +
+                "Your Dob is: " +
+                dob +
+                "\n" +
+                "Your Email is: " +
+                email +
+                "\n" +
+                "Country is: " +
+                country
+            );
+        });
+    </script>
+</body>
+
+</html>

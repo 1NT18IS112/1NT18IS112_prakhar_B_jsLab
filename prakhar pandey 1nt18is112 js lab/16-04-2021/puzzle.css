@@ -1,0 +1,30 @@
+#a1 {
+  width: 300px;
+  padding: 25px;
+  background-color:blue;
+}
+
+#a2 {
+  width: 300px;
+  padding: 25px;
+  display: none;
+  margin-left: 100px;
+  background-color: green;
+}
+
+#a3 {
+  width: 300px;
+  padding: 25px;
+  display: none;
+  margin-left: 200px;
+  background-color: yellow;
+}
+
+#a4 {
+  width: 300px;
+  padding: 25px;
+  display: none;
+  margin-left: 300px;
+  background-color: red;
+}
+
